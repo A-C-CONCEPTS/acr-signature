@@ -1,0 +1,9 @@
+name: gitleaks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  scan:
+    uses: A-C-CONCEPTS/.github-private/.github/workflows/gitleaks-reusable.yml@main
