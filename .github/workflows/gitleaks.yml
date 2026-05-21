@@ -4,6 +4,11 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   scan:
-    uses: A-C-CONCEPTS/.github-private/.github/workflows/gitleaks-reusable.yml@main
+    uses: A-C-CONCEPTS/.github-private/.github/workflows/gitleaks-reusable.yml@8641005a7e630c03541101486c548eaed21e3757  # pinned to .github-private main; bump SHA to upgrade
+    permissions:
+      contents: read
